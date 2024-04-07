@@ -1,0 +1,37 @@
+header {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+nav button {display: none;}
+#primaryNav {display: flex;}
+nav {
+    ul {
+        margin-left: 2%;
+        border-left: 1px solid rgba(255,255,255,0.1);
+        li {
+            border-left: 1px solid rgba(255,255,255,0.1);
+
+            a {
+                border: none;
+                font-size: 1rem;
+                padding: .9rem 1.2rem;
+                color: white;
+                text-decoration: none;
+                -webkit-transition: background 0.3s linear;
+                transition: background 0.3s linear;
+                &:hover {
+                    background: darken($menuColor, 5%);
+                }
+            }
+        }
+    }
+}
+
+// create the for loop
+@for $i from 1 through 12{
+    $w: calc($i /12) *100%;
+    .medium-#{$i} {flex-basis: $w}
+    }
+    

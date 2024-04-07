@@ -1,0 +1,29 @@
+header, nav, main, footer{
+    max-width: 60rem;
+    margin: auto;
+}
+
+/*Navigation stuff goes here*/
+
+Nav{
+button{display:none;}
+ul, ul.open{
+    margin-left: 2vw;
+    display:flex;
+    border: none;
+    li{
+        border:none;
+    }
+
+} //end ul
+
+
+} //end nav
+
+
+// create the for loop
+@for $i from 1 through 12{
+    $w: calc($i /12) *100%;
+    .large-#{$i} {flex-basis: $w}
+    }
+    
