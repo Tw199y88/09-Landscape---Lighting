@@ -1,23 +1,23 @@
 const hb = document.querySelector('#hamburgerButton');
-const pn = document.querySelector('#primaryNav');
 
 hb.addEventListener('click', () => {
-    hb.classList.toggle('open');
-    pn.classList.toggle('open');
-
+    document.querySelector("#primaryNav").classList.toggle("open");
 });
 
 //inject current year in footer
 const variableOne = new Date();
 document.querySelector('#year').textContent = variableOne.getFullYear();
 
-
-//new stuff here
-
-// function toggleMenu(){
-//     document.getElementById("primaryNav").classList.toggle("open");
-// }
-
-// const x = document.getElementById("hamburgerButton")
-
-// x.onclick = toggleMenu;
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    effect:'slide',
+    speed:1500,
+    autoplay: {
+        delay: 3000,
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });

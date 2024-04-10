@@ -6,19 +6,36 @@ header, nav, main, footer{
 /*Navigation stuff goes here*/
 
 Nav{
-button{display:none;}
-ul, ul.open{
-    margin-left: 2vw;
-    display:flex;
-    border: none;
-    li{
-        border:none;
-    }
+    button{display:none;}
+    ul, ul.open{
+        margin-left: 2vw;
+        display:flex;
+        border: none;
+        li{
+            border:none;
+            a {
+                font-size: .9rem;
+                padding: .5rem 1.2rem;
+            }
+        }
 
-} //end ul
-
+    } //end ul
 
 } //end nav
+
+
+div.headshots{
+    section{
+
+        grid-template-columns: 200px auto;
+        column-gap: 16px;
+    } // end section
+  } // end headshots
+
+  div.masking{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
 
 // create the for loop

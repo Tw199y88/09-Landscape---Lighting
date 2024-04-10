@@ -15,9 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="css/styles.min.css" rel="stylesheet">
 
     
@@ -45,80 +43,126 @@
 </div>
 
 <div id="navWrapper">
-    <nav >
-        <button id="hamburgerButton" value="">
-            <span class="line top"></span>
-            <span class="line middle"></span>
-            <span class="line bottom"></span>
+    <nav>
+        <button id="hamburgerButton">
+            &#9776;
         </button>
         <ul id="primaryNav">
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Services</a></li>
-            <li class="active"><a href="#">Best Practices</a></li>
+            <li class="parent"><a href="#">Clients</a>
+                <ul>
+                    <li class="active"><a href="#">Menu Item One</a></li>
+                    <li><a href="#">Menu Item Two</a></li>
+                    <li><a href="#">Menu Item Three</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li class="parent"><a href="#">Services</a>
+            <ul>
+                <li><a href="#">Menu Item One</a></li>
+                <li class="active"><a href="#">Menu Item Two</a></li>
+                <li><a href="#">Menu Item Three</a></li>
+            </ul>
+        </li>
             <li><a href="#">Our Team</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-</nav>
+    </nav>
 </div>
 
 <div id="mainWrapper">
-    <main>      
-        <div class="hero">
-            <video autoplay muted playsinline loop width="800" height="250">
-                <source src="media/hero-video-hb.webm" type="video/webm">
+    <main>   
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/garden-small.webp" media="(max-width: 400px)">
+            <source srcset="images/garden-medium.webp" media="(max-width: 800px)">
+            <img srcset="images/garden-large.webp" alt="sliderA" width="16" height="5">
+        </picture>
+      </div>
+
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/lawn-mower-small.webp" media="(max-width: 400px)">
+            <source srcset="images/lawn-mower-medium.webp" media="(max-width: 800px)">
+            <img srcset="images/lawn-mower-large.webp" alt="sliderA" width="16" height="5">
+        </picture>
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/lights-small.webp" media="(max-width: 400px)">
+            <source srcset="images/lights-medium.webp" media="(max-width: 800px)">
+            <img srcset="images/lights-large.webp" alt="sliderA" width="16" height="5">
+        </picture>
+      </div>
+
+    </div>
+    <div class="swiper-text">
+        <h3>Cutting Edge Technology</h3>
+        <p>From 1985</p>
+    </div>
+  
+
+</div>   
+        <h1>Services</h1>
+
+
+        <div class="masking">
+            <section>
+                <h2>Lawn Care</h2>
+                <img src="images/lawn-care.png" width="400" height="250" alt="yard">
+                <img src="images/grass.png" width="400" height="275" alt="mask">
+            </section>
+
+            <section>
+                <h2>Fertilization</h2>
+                <img src="images/fertilizing.png" width="400" height="250" alt="yard">
+                <img src="images/wild-flowers.png" width="400" height="250" alt="mask">
+            </section>
             
-                <source src="media/hero-video-hb.mp4" type="video/mp4">
-            </video>
-            <div>
-                <h3>Cutting Edge Technology</h3>
-                <p>From 1985</p>
-            </div>
+            <section>
+                <h2>Power Washing</h2>
+                <img src="images/power-washing.png" width="400" height="250" alt="yard">
+                <img src="images/grass.png" width="400" height="112" alt="mask">
+            </section>
+
+            <section>
+                <h2>Hedge Trim</h2>
+                <img src="images/hedge-trimming.png" width="400" height="250" alt="yard">
+                <img src="images/wild-flowers.png" width="400" height="46" alt="mask">
+            </section>
+
         </div>
 
-        <h1>Speakers</h1>
+        
+<div class="headshots-wrapper">
+    <h1>Testimonials</h1>
+    <div class="headshots">
+        <section>
+            <img src="images/allen-headshot.webp" width="200" height="200" alt="customer one">
+            <p>Bacon ipsum dolor amet nulla esse corned beef tail pork chop, magna pariatur eiusmod beef ribs deserunt.
+            Hamburger burgdoggen biltong meatball aute buffalo aliquip tail id. Aliqua venison brisket anim meatloaf excepteur capicola.
+            Reprehenderit hamburger andouille nisi landjaeger. Spare ribs venison cupim tempor. Mollit occaecat ad, esse ball tip jerky.</p>
+        </section>
+    
+    
+        <section>
+            <img src="images/daniel-headshot.webp" width="200" height="200" alt="customer one">
+            <p>Bacon ipsum dolor amet nulla esse corned beef tail pork chop, magna pariatur eiusmod beef ribs deserunt.
+            Hamburger burgdoggen biltong meatball aute buffalo aliquip tail id. Aliqua venison brisket anim meatloaf excepteur capicola.
+            Reprehenderit hamburger andouille nisi landjaeger. Spare ribs venison cupim tempor. Mollit occaecat ad, esse ball tip jerky.</p>
+        </section>
+    </div>
 
-        <div id="cardWrapper">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/flip-img-1.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Billy Mitchell</h1>
-                        <p>Pac Man High Score</p>
-                        <p>In 1999, Mitchell was the first person to claim a perfect score of 3,333,360 points on the arcade game Pac-Man</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/flip-img-3.jpg" alt="Avatar" style="width:300px;height:300px;">
-                </div>
-                <div class="flip-card-back">
-                    <h1>Kelly Wellsby</h1>
-                    <p>Super Mario High Score</p>
-                    <p>In 1990, Kelly was the first person to claim a perfect score of 7,999,360 on Super Mario 3.</p>
-                </div>
-                </div>
-            </div>
+</div>
 
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/flip-img-2.jpg" alt="Avatar" style="width:300px;height:300px;">
-                </div>
-                <div class="flip-card-back">
-                    <h1>Andy Samberg</h1>
-                    <p>Mega-Man High Score</p>
-                    <p>In 1987, Andy was the first person to claim a perfect score of 5,753,240 points on the arcade game Mega-Man.</p>
-                </div>
-                </div>
-            </div>
-        </div>
+
     </main>
 </div>
 
@@ -127,6 +171,7 @@
         <p>&copy; <span id="year">x</span> &bull; Brooke Anderson</p>
     </footer>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
