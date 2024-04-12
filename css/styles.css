@@ -510,7 +510,7 @@ div.masking section h2 {
   margin: 0;
   padding: 12px;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   border-radius: 4px 4px 0px 0px;
 }
 div.masking section img {
@@ -525,7 +525,7 @@ div.masking section img:last-child {
 
 #footerWrapper {
   background-color: orange;
-  color: white;
+  color: black;
 }
 
 footer {
@@ -574,7 +574,7 @@ footer p {
     padding: 0.75rem 2vw;
     font-size: 14px;
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
-    color: white;
+    color: black;
     text-decoration: none;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
   }
@@ -648,7 +648,7 @@ footer p {
     display: block;
     font-size: 1rem;
     padding: 0.9rem 1.2rem;
-    color: white;
+    color: black;
     text-decoration: none;
     transition: background 0.3s linear;
   }

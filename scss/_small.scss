@@ -140,7 +140,7 @@ div.masking{
       margin: 0;
       padding: 12px;
       text-align: center;
-      color: white;
+      color: rgb(0, 0, 0);
       border-radius: 4px 4px 0px 0px;
     }
     img{
@@ -163,7 +163,7 @@ div.masking{
 
 #footerWrapper {
     background-color: $menuColor;
-    color:white;
+    color:black;
 }
 footer {
     padding: 0.5rem $gutter;
