@@ -4,6 +4,9 @@ header {
     }
 }
 
+#phone{
+    display:block;
+  }
 
 #primaryNav {display: flex;}
 
@@ -13,6 +16,7 @@ header {
     color: rgba(255,255,255,0.5);
     float: left;
 }
+
 
 #navWrapper {
     background-color: $menuColor;

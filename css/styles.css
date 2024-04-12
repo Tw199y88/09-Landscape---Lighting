@@ -339,7 +339,12 @@ body {
 
 #titleWrapper {
   height: 100%;
+  width: 500px;
   margin-top: 0;
+}
+
+#phone {
+  display: none;
 }
 
 header {
@@ -353,8 +358,8 @@ header h1 {
   margin: auto 0;
   text-align: left;
   font-size: 1.2rem;
-  font-weight: 800;
-  font-family: "MuseoModerno", sans-serif;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
   font-style: normal;
   color: rgb(29, 116, 26);
 }
@@ -519,7 +524,7 @@ div.masking section img:last-child {
 }
 
 #footerWrapper {
-  background-color: #0aa;
+  background-color: orange;
   color: white;
 }
 
@@ -538,7 +543,7 @@ footer p {
 }
 @media only screen and (max-width: 34.9375rem) and (max-width: 34.9375rem) {
   nav {
-    background-color: #0aa;
+    background-color: orange;
   }
   /* Navigation Button  -------------------------------------------------------- */
   nav button {
@@ -613,6 +618,9 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+  #phone {
+    display: block;
+  }
   #primaryNav {
     display: flex;
   }
@@ -623,7 +631,7 @@ footer p {
     float: left;
   }
   #navWrapper {
-    background-color: #0aa;
+    background-color: orange;
   }
   nav button {
     display: none;
@@ -645,13 +653,13 @@ footer p {
     transition: background 0.3s linear;
   }
   nav ul li a:hover {
-    background: #009191;
+    background: #e69500;
   }
   nav ul li ul {
     display: flex;
     padding: 0px;
     flex-direction: column;
-    background-color: #0aa;
+    background-color: orange;
     border: none;
     width: 12rem;
     position: absolute;
@@ -662,7 +670,7 @@ footer p {
     border-top: solid 1px rgba(0, 0, 0, 0.2);
   }
   nav ul li ul li.active a {
-    background-color: #009191;
+    background-color: #e69500;
   }
   nav ul li:hover ul {
     left: auto;
